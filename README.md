@@ -11,6 +11,7 @@ First, let's look at the name of our .java file in the src/ directory and name o
 ```java
 public class MagicNumber {
 
+	// Your main() method goes here.
 }
 ```
 
@@ -33,8 +34,8 @@ Next, you must create a Scanner object inside of your main() method. This object
 Creating an object in Java is done the same as in C++.
 
 ```java
-		// Inside main() method.
-		Scanner scanner = new Scanner(System.in);
+// Inside main() method.
+Scanner scanner = new Scanner(System.in);
 ```
 
 But how do we user the scanner object to get user input?
@@ -54,9 +55,9 @@ Scanner has many built-in methods read user input depending on the type of data 
 The code snippet below shows how to input a float from the user.
 
 ```java
-		// Inside main() method.
-		float num;
-		num = scanner.nextFloat();
+// Inside main() method.
+float num;
+num = scanner.nextFloat();
 ```
 
 For more information on the Scanner class and how it's used visit: https://www.w3schools.com/java/java_user_input.asp
@@ -74,16 +75,18 @@ But, what if you want to output multiple data types in the same print()/println(
 Simply seperate them with the summation operator '+'.
 
 ```java
-		System.out.print("hello" + 5 + true + 7.2);
+System.out.print("hello" + 5 + true + 7.2);
+// or
+System.out.println("hello" + 5 + true + 7.2);
 ```
 
 Easy peasy!
 
 ## Your program
 
-Calculate a person's magic number using arithmetic operations in Java. A person's magic number is calculated by multiplying the month of their birth by the year of their birth, and taking the modulus of that result and the day of their birth. The equation is:
+Calculate a person's magic number using simple arithmetic operators in Java. A person's magic number is calculated by multiplying the month of their birth by the year of their birth, and taking the modulus of that result and the day of their birth. The equation is:
 
-**magicNumber = (birthMonth * birthYear) % birthDay**
+**magicNumber = (month * year) % day**
 
 Write a program that will ask the user for their month of birth, day of birth, and year of birth and then output their magic number.
 
