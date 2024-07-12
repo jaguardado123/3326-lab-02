@@ -1,6 +1,6 @@
 # Lab Assignment 02
 
-In this lab you will practice writing Java code to input user data, declare variables, use simple arithmetic, and output different data types.
+In this lab you will practice writing Java code to declare variables and output different data types.
 
 Same as Lab Assignment 01, you need to set up your workspace (class and main() method).
 
@@ -9,62 +9,33 @@ Same as Lab Assignment 01, you need to set up your workspace (class and main() m
 First, let's look at the name of our .java file in the src/ directory and name our class accordingly and remember to make it **public**.
 
 ```java
-public class MagicNumber {
+public class MixMatch {
 
 	// Your main() method goes here.
 }
 ```
 
-Next, **create your main() method inside the MagicNubmer class**. It should be the same as in Lab Assignment 01. Try writing the main() method without looking at your notes. Writing your main class and method should come to you as natural as in C++.
+Next, **create your main() method inside the MixMatch class**. It should be the same as in Lab Assignment 01. Try writing the main() method without looking at your notes. Writing your main class and method should come to you as natural as in C++.
 
 Now let the fun begin!
-
-## Getting user input
-
-To get user input in Java you must first import the **Scanner** class from the `java.util` package. Importing packages in Java must be done at the start of your code.
-
-```java
-import java.util.Scanner;
-
-// Your code should start here.
-```
-
-Next, you must create a Scanner object inside of your main() method. This object will be used to get all of your user input regardless of their data type.
-
-Creating an object in Java is done the same as in C++.
-
-```java
-// Inside main() method.
-Scanner scanner = new Scanner(System.in);
-```
-
-But how do we user the scanner object to get user input?
-
-Scanner has many built-in methods read user input depending on the type of data we're expecting (ex: String, int, double, etc.).
-
-| **Method** | **Description** |
-| ---- | ---- |
-| nextBoolean() | Reads a <code style="color : darkorange">boolean</code> value from the user |
-| nextByte() | Reads a <code style="color : darkorange">byte</code> value from the user |
-| nextDouble() | Reads a <code style="color : darkorange">double</code> value from the user |
-| nextFloat() | Reads a <code style="color : darkorange">float</code> value from the user |
-| nextInt() | Reads an <code style="color : darkorange">int</code> value from the user |
-| nextLine() | Reads a <code style="color : darkorange">String</code> value from the user |
-| nextShort() | Reads a <code style="color : darkorange">short</code> value from the user |
-
-The code snippet below shows how to input a float from the user.
-
-```java
-// Inside main() method.
-float num;
-num = scanner.nextFloat();
-```
-
-For more information on the Scanner class and how it's used visit: https://www.w3schools.com/java/java_user_input.asp
 
 ## Declaring variables & arithmetic operations
 
 Exactly the same as C++. Only strings start with a capital 'S'.
+
+**dataType** **identifier** = **literalValue**;
+
+or
+
+**dataType** **identifier**;
+
+Remember the rules: 
+* Don't start with numbers.
+* Don't include spaces.
+* Don't include special characters, except '_'.
+* Don't start with a capital letter, those are reserved for classes.
+
+For more information about variables in Java visit: https://www.w3schools.com/java/java_variables.asp and https://www.w3schools.com/java/java_data_types.asp 
 
 ## Outputting different data types
 
@@ -84,19 +55,20 @@ Easy peasy!
 
 ## Your program
 
-Calculate a person's magic number using simple arithmetic operators in Java. A person's magic number is calculated by multiplying the month of their birth by the year of their birth, and taking the modulus of that result and the day of their birth. The equation is:
+**Mix & Match Data Types**
 
-**magicNumber = (month * year) % day**
+Declare 8 variables of type String, char, short, int, long, float, double, and boolean and initialize them with a literal value. Next, output the stored value next to its type description using the same print()/println() method.
 
-Write a program that will ask the user for their month of birth, day of birth, and year of birth and then output their magic number.
-
+**Example:**
+```java
+short num = 7;
+System.out.println(num + " <- Int: Stores whole numbers from -2,147,483,648 to 2,147,483,647");
 ```
-Welcome to Magic Number Calculator!
-Your month of birth: 7
-Your day of birth: 4
-Your year of birth: 1776
+Finally, output all of the variables of similar type using the same print()/println() method.
 
-Your magic number is 0.
+**Example:**
+```
+All text data types: Hello, A.
 ```
 
 ## Submit your assignment
