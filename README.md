@@ -43,12 +43,14 @@ Java's print()/println() method is caple of outputting all data types: String, s
 
 But, what if you want to output multiple data types in the same print()/println() method?
 
-Simply seperate them with the summation operator '+'.
+Simply seperate them with the summation/concatination operator '+'.
+
+But how does this work with mixed data types? Java uses automatic type conversion to String on all non-String data types. To invoke this automatic type conversion <ins>you must include a String somewhere inside the parenthesis of your print()/println() method</ins>.
 
 ```java
-System.out.print("hello" + 5 + true + 7.2);
+System.out.print("must have a string" + 5 + true + 7.2);
 // or
-System.out.println("hello" + 5 + true + 7.2);
+System.out.println("must have a string" + 5 + true + 7.2);
 ```
 
 Easy peasy!
