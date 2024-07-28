@@ -23,11 +23,11 @@ Now let the fun begin!
 
 Exactly the same as C++. Only strings start with a capital 'S'.
 
-**dataType identifier = literalValue**;
+&emsp;**data_type identifier = literal_value**;
 
 or
 
-**dataType identifier**;
+&emsp;**data_type identifier**;
 
 Remember the rules for variable identifiers: 
 * Don't start with numbers.
