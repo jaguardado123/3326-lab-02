@@ -33,6 +33,7 @@ Remember the rules for variable identifiers:
 * Don't start with numbers.
 * Don't include spaces.
 * Don't include special characters, except `_`.
+* Don't use reserved keywords like `class`, `return`, or `void`.
 * Don't start with a capital letter, those are reserved for class identifiers.
 
 For more information about variables in Java visit: https://www.w3schools.com/java/java_variables.asp and https://www.w3schools.com/java/java_data_types.asp 
@@ -59,16 +60,16 @@ Easy peasy!
 
 ### Mix & Match Data Types
 
-Declare 8 variables of type `String`, `char`, `short`, `int`, `long`, `float`, `double`, and `boolean` and initialize them with a literal value. 
+**Declare and initialize 8 variables** of type `String`, `char`, `short`, `int`, `long`, `float`, `double`, and `boolean`. 
 
-Next, output the stored literal value **along with a brief description of the data type** for each variable. Use a single print method for each.
+Next, output the stored literal value for each variable **along with a brief description of the data type**. Use a single print method for each variable.
 
 **Example:**
 ```java
-int num = 7;
-System.out.println(num + " <- Integer, stores whole numbers from -2,147,483,648 to 2,147,483,647");
+int varInt = 7;
+System.out.println(varInt + " <- Integer, stores whole numbers from -2,147,483,648 to 2,147,483,647");
 ```
-Lastly, practice outputting a combination of different data types using a single print method.
+Lastly, practice outputting **multiple variables with a single print method**.
 
 ## Submit your assignment
 
