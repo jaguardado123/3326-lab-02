@@ -40,11 +40,11 @@ For more information about variables in Java visit: https://www.w3schools.com/ja
 
 ### Outputting different data types
 
-Java's `print()` and `println()` method are caple of outputting all data types: String, int, double, boolean, etc.
+Java's `print()`, `println()`, and `printf()` methods are caple of outputting all data types: String, int, double, boolean, etc.
 
 But, what if you want to output multiple data types in the same print method?
 
-Simply seperate them with the addition/concatination operator `+`.
+For `print()` and `println` simply seperate them with the addition/concatination operator `+`.
 
 But how does this work with mixed data types? Java uses automatic type conversion to String on all non-String data types. To invoke this automatic type conversion <ins>you must include a String somewhere inside the parenthesis of your print method</ins>.
 
@@ -52,6 +52,12 @@ But how does this work with mixed data types? Java uses automatic type conversio
 System.out.print("must have a string" + 5 + true + 7.2);
 // or
 System.out.println("must have a string" + 5 + true + 7.2);
+```
+
+However, for `printf()` requires you to format your text using `%` followed by a letter to specify the data type. Use `d` for decimal numbers, `s` for strings, `b` for Booleans, and `c` for characters.
+
+```java
+System.out.printf("Use %d for whole numbers, %s for strings, and %b for Booleans.", 72, "hello", true);
 ```
 
 Easy peasy!
