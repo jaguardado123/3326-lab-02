@@ -62,6 +62,8 @@ System.out.printf("Use %d for whole numbers, %s for strings, and %b for Booleans
 
 Easy peasy!
 
+For more information visit https://www.w3schools.com/java/java_ref_output.asp
+
 ## Your Assignment
 
 ### Mix & Match Data Types
